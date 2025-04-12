@@ -11,6 +11,7 @@
     <header>
         <div class="logo">
           <h1>Tech Zone</h1>
+          
         </div>
         <nav>
           <ul>
@@ -40,7 +41,7 @@
           </button>
         </nav>
       </header>
-    <div class="side_bar">
+    <div class="side_bar" style="right: -400px;">
     <li><a href="index.html">Home</a></li>
     <li><a href="index01.html">Phones</a></li>
     <li><a href="index02.html">Laptops</a></li>
@@ -224,10 +225,9 @@
         </div>
     </div>
     <script>
+        let sideBar = document.querySelector('.side_bar') 
         const toggleBtn = () => {
-            let sideBar = document.querySelector('.side_bar')
-            
-            if(sideBar.style.right === '-400px'){
+            if(sideBar.style.right == '-400px'){
                 sideBar.style.right = '0px'
             }else {
                 sideBar.style.right = '-400px'

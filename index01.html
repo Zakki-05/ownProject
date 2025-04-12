@@ -354,5 +354,20 @@
       </div>
     </div>
   </section>
+  <footer>
+    <p>&copy; 2025 TechShop. All rights reserved.</p>
+  </footer>
+  <script>
+    const toggleBtn = () => {
+        let sideBar = document.querySelector('.side_bar')
+        
+        if(sideBar.style.right === '-400px'){
+            sideBar.style.right = '0px'
+        }else {
+            sideBar.style.right = '-400px'
+        }
+        console.log('clicked')
+    }
+</script>
  </body>
 </html>
